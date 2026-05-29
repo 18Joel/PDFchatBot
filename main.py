@@ -44,7 +44,6 @@ if uploaded_file is not None:
             }
         ],
         model="llama-3.3-70b-versatile",
-        max_tokens=500,
       )
 # Display the assistant's response
       messages.chat_message("assistant").write(chat_completion.choices[0].message.content)
